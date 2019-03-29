@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+    createAppContainer,
+    createStackNavigator,
+    createBottomTabNavigator
+} from 'react-navigation';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
