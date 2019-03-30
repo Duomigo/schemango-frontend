@@ -1,10 +1,14 @@
 import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import {
     createAppContainer,
     createStackNavigator,
     createBottomTabNavigator
 } from 'react-navigation';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+    Provider,
+    connect
+} from 'react-redux'
 
 export default class App extends React.Component {
   render() {
