@@ -47,7 +47,7 @@ const AppStack = createBottomTabNavigator(
         )
       }
     },
-    Customer: {
+    Customers: {
       screen: CustomersStack,
       navigationOptions: {
         tabBarLabel: "Customer",
