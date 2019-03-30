@@ -3,7 +3,8 @@ import { Ionicons } from "@expo/vector-icons";
 import {
   createAppContainer,
   createStackNavigator,
-  createBottomTabNavigator
+  createBottomTabNavigator,
+  createSwitchNavigator
 } from "react-navigation";
 
 import ScheduleScreen from './components/AppStack/Schedule/ScheduleScreen';
@@ -95,6 +96,6 @@ export default createAppContainer(createSwitchNavigator(
 	},
 	{
         // tenmporary, switch back to auth loading later
-		initialRouteName: 'AppStack',
+		initialRouteName: 'App',
 	}
 ));

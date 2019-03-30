@@ -12,9 +12,9 @@ import Navigator from './Navigator'
 export default class App extends React.Component {
   render() {
     return (
-        <Provider store={}>
+        //<Provider>
             <Navigator />
-        </Provider>
+        //</Provider>
     );
   }
 }
