@@ -2,16 +2,31 @@ import React, { Component } from 'react';
 import {
     View,
     Text,
+    TouchableOpacity,
+    AsyncStorage,
     StyleSheet
 } from 'react-native';
 
 class PersonalScreen extends Component {
+    _signOutAsync = async () => {
+        //await AsyncStorage.clear();
+        this.props.navigation.navigate('Splash')
+    }
+
     render() {
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>
                     PersonalScreen
                 </Text>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this._signOutAsync}
+                >
+                    <Text>
+                        Sign Out
+                    </Text>
+                </TouchableOpacity>
             </View>
         )
     }
