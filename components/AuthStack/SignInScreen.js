@@ -22,7 +22,9 @@ export default SignInScreen;
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: 'yellow'
+        backgroundColor: '#fff',
+        justifyContent: 'center',
+        alignItems: 'center'
     },
     text: {
         fontFamily: 'Avenir Next',

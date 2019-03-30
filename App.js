@@ -4,13 +4,15 @@ import {
     Provider,
     connect
 } from 'react-redux'
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
 import Navigator from './Navigator'
 
 export default class App extends React.Component {
   render() {
     return (
-        <Provider store={store}>
+        <Provider store={}>
             <Navigator />
         </Provider>
     );
