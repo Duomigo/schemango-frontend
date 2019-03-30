@@ -38,7 +38,7 @@ const PersonalStack = createStackNavigator({
 
 const AppStack = createBottomTabNavigator(
   {
-    Feed: {
+    Schedule: {
       screen: ScheduleStack,
       navigationOptions: {
         tabBarLabel: "Schedule",
@@ -47,7 +47,7 @@ const AppStack = createBottomTabNavigator(
         )
       }
     },
-    Explore: {
+    Customer: {
       screen: CustomersStack,
       navigationOptions: {
         tabBarLabel: "Customer",
@@ -56,7 +56,7 @@ const AppStack = createBottomTabNavigator(
         )
       }
     },
-    Profile: {
+    Personal: {
       screen: PersonalStack,
       navigationOptions: {
         tabBarLabel: "Personal",
@@ -67,7 +67,8 @@ const AppStack = createBottomTabNavigator(
     }
   },
   {
-    swipeEnabled: true
+    swipeEnabled: true,
+    initialRouteName: 'Schedule'
   }
 );
 

@@ -7,14 +7,18 @@ import {
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
+import reducers from './reducers'
+
 import Navigator from './Navigator'
+
+const store = createStore(reducers, applyMiddleware(thunk))
 
 export default class App extends React.Component {
   render() {
     return (
-        //<Provider>
+        <Provider store={store}>
             <Navigator />
-        //</Provider>
+        </Provider>
     );
   }
 }

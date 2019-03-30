@@ -16,6 +16,11 @@ class SplashScreen extends Component {
         this.props.navigation.navigate('SignUp')
     }
 
+    // demo tryout
+    _toGetIn = async () => {
+        this.props.navigation.navigate('App')
+    }
+
     render() {
         return (
             <View style={styles.container}>
@@ -36,6 +41,14 @@ class SplashScreen extends Component {
                 >
                     <Text>
                         Sign Up
+                    </Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity
+                    onPress={this._toGetIn}
+                >
+                    <Text>
+                        Get In
                     </Text>
                 </TouchableOpacity>
             </View>
