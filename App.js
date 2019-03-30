@@ -1,30 +1,18 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {
-    createAppContainer,
-    createStackNavigator,
-    createBottomTabNavigator
-} from 'react-navigation';
-import {
     Provider,
     connect
 } from 'react-redux'
 
+import Navigator from './Navigator'
+
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Welcome to Schemango</Text>
-      </View>
+        <Provider store={store}>
+            <Navigator />
+        </Provider>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
