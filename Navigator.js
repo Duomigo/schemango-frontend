@@ -52,7 +52,7 @@ const AppStack = createBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: "Customer",
         tabBarIcon: ({ tintColor }) => (
-          <Ionicons name="ios-compass" color={tintColor} size={24} />
+          <Ionicons name="ios-albums" color={tintColor} size={24} />
         )
       }
     },
