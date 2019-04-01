@@ -43,7 +43,7 @@ const AppStack = createBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: "Schedule",
         tabBarIcon: ({ tintColor }) => (
-          <Ionicons name="ios-albums" color={tintColor} size={24} />
+          <Ionicons name="ios-calendar" color={tintColor} size={28} />
         )
       }
     },
@@ -52,7 +52,7 @@ const AppStack = createBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: "Customer",
         tabBarIcon: ({ tintColor }) => (
-          <Ionicons name="ios-albums" color={tintColor} size={24} />
+          <Ionicons name="ios-albums" color={tintColor} size={26} />
         )
       }
     },
@@ -61,7 +61,7 @@ const AppStack = createBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: "Personal",
         tabBarIcon: ({ tintColor }) => (
-          <Ionicons name="ios-person" color={tintColor} size={24} />
+          <Ionicons name="ios-person" color={tintColor} size={30} />
         )
       }
     }
