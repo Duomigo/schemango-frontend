@@ -21,7 +21,7 @@ export default class AgendaScreen extends Component {
                 renderItem={this.renderItem.bind(this)}
                 renderEmptyDate={this.renderEmptyDate.bind(this)}
                 rowHasChanged={this.rowHasChanged.bind(this)}
-                // markingType={'period'}
+                //markingType={'period'}
                 // markedDates={{
                 //    '2017-05-08': {textColor: '#666'},
                 //    '2017-05-09': {textColor: '#666'},
@@ -38,10 +38,12 @@ export default class AgendaScreen extends Component {
                     console.log(day);
                 }}
                 theme={{
-                    agendaDayTextColor: 'yellow',
-                    agendaDayNumColor: 'green',
+                    agendaDayTextColor: '#14B5D0',
+                    agendaDayNumColor: '#007489',
                     agendaTodayColor: 'red',
-                    agendaKnobColor: 'blue',
+                    agendaKnobColor: '#007489',
+                    //textDayFontFamily: 'Avenir Next',
+                    //textDayHeaderFontFamily: 'Avenir Next'
                 }}
             />
         );
@@ -81,7 +83,7 @@ export default class AgendaScreen extends Component {
     renderItem(item) {
         return (
             <View style={[styles.item, { height: item.height }]}>
-                <Text>{item.name}</Text>
+                <Text style={styles.itemText}>{item.name}</Text>
             </View>
         );
     }
@@ -89,7 +91,7 @@ export default class AgendaScreen extends Component {
     renderEmptyDate() {
         return (
             <View style={styles.item}>
-                <Text>This is empty date!</Text>
+                <Text style={styles.emptyDateText}>This is empty date!</Text>
             </View>
         );
     }
@@ -113,9 +115,19 @@ const styles = StyleSheet.create({
         marginRight: 10,
         marginTop: 17
     },
+    itemText: {
+        fontFamily: 'Avenir Next',
+        fontSize: 16,
+        fontWeight: '400'
+    },
     emptyDate: {
         height: 15,
         flex: 1,
         paddingTop: 30
+    },
+    emptyDateText: {
+        fontFamily: 'Avenir Next',
+        fontSize: 16,
+        fontWeight: '400'
     }
 });
