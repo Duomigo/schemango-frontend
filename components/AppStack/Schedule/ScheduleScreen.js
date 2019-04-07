@@ -5,14 +5,17 @@ import {
     StyleSheet
 } from 'react-native';
 
+import AgendaScreen from './AgendaScreen'
+
 class ScheduleScreen extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.text}>
-                    ScheduleScreen
-                </Text>
-            </View>
+            // <View style={styles.container}>
+            //     <Text style={styles.text}>
+            //         ScheduleScreen
+            //     </Text>
+            // </View>
+            <AgendaScreen />
         )
     }
 }
