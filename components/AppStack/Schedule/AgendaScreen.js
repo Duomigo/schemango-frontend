@@ -15,7 +15,9 @@ export default class AgendaScreen extends Component {
             <Agenda
                 items={this.state.items}
                 loadItemsForMonth={this.loadItems.bind(this)}
-                selected={'2017-05-16'}
+                selected={'2019-05-16'}
+                pastScrollRange={2}
+                futureScrollRange={2}
                 renderItem={this.renderItem.bind(this)}
                 renderEmptyDate={this.renderEmptyDate.bind(this)}
                 rowHasChanged={this.rowHasChanged.bind(this)}
@@ -34,6 +36,13 @@ export default class AgendaScreen extends Component {
                 //renderDay={(day, item) => (<Text>{day ? day.day: 'item'}</Text>)}
                 onDayPress={day => {
                     console.log(day);
+                }}
+                theme={{
+                    agendaDayTextColor: 'yellow',
+                    agendaDayNumColor: 'green',
+                    agendaTodayColor: 'red',
+                    agendaKnobColor: 'blue',
+                    textSectionTitleColor: '#b6c1cd',
                 }}
             />
         );
