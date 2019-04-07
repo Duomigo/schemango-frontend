@@ -42,7 +42,6 @@ export default class AgendaScreen extends Component {
                     agendaDayNumColor: 'green',
                     agendaTodayColor: 'red',
                     agendaKnobColor: 'blue',
-                    textSectionTitleColor: '#b6c1cd',
                 }}
             />
         );
