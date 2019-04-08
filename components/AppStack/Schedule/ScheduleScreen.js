@@ -5,7 +5,8 @@ import {
     StyleSheet
 } from 'react-native';
 
-import AgendaScreen from './AgendaScreen'
+import AgendaScreen from './AgendaScreen';
+import CalendarScreen from './CalendarScreen'
 
 class ScheduleScreen extends Component {
     render() {
@@ -15,7 +16,7 @@ class ScheduleScreen extends Component {
             //         ScheduleScreen
             //     </Text>
             // </View>
-            <AgendaScreen />
+            <CalendarScreen />
         )
     }
 }
