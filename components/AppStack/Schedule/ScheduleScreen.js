@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-import {
-    View,
-    Text,
-    StyleSheet
-} from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-import CalendarScreen from './CalendarScreen'
+import CalendarScreen from './CalendarScreen';
+import { SafeAreaView } from 'react-navigation';
 
 class ScheduleScreen extends Component {
+    static navigationOptions = {
+        header: null
+    };
+
     render() {
         return (
-            <CalendarScreen />
+            <SafeAreaView>
+                <CalendarScreen />
+            </SafeAreaView>
         )
     }
 }
@@ -29,4 +32,4 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: '600'
     }
-})
+});
