@@ -18,23 +18,19 @@ class CalendarScreen extends Component {
 
                     // Handler which gets executed on day press. Default = undefined
                     onDayPress={day => {
-                        console.log("Hello, world")
+                        console.log('Hello, world');
                         console.log('selected day', day);
                     }}
-
                     // Handler which gets executed on day long press. Default = undefined
                     onDayLongPress={day => {
                         console.log('selected day', day);
                     }}
-
                     // Month format in calendar title. Formatting values: http://arshaw.com/xdate/#Formatting
-                    monthFormat={'yyyy MM'}
-
+                    monthFormat={'MMMM yyyy'}
                     // Handler which gets executed when visible month changes in calendar. Default = undefined
                     onMonthChange={month => {
                         console.log('month changed', month);
                     }}
-
                     // Hide month navigation arrows. Default = false
                     //hideArrows={true}
 
@@ -62,6 +58,38 @@ class CalendarScreen extends Component {
 
                     // Handler which gets executed when press arrow icon left. It receive a callback can go next month
                     onPressArrowRight={addMonth => addMonth()}
+                    // Specify style for calendar container element. Default = {}
+                    style={{
+                        //borderWidth: 1,
+                        //borderColor: 'gray',
+                        backgroundColor: 'yellow'
+                        //height: 350
+                    }}
+                    // Specify theme properties to override specific styles for calendar parts. Default = {}
+                    theme={{
+                        backgroundColor: '#ffffff',
+                        calendarBackground: 'pink',
+                        // Day color
+                        textSectionTitleColor: 'rgb(255,45,85)',
+                        selectedDayBackgroundColor: '#00adf5',
+                        selectedDayTextColor: '#ffffff',
+                        todayTextColor: '#00adf5',
+                        dayTextColor: '#2d4150',
+                        textDisabledColor: '#d9e1e8',
+                        dotColor: '#00adf5',
+                        selectedDotColor: '#ffffff',
+                        arrowColor: 'orange',
+                        monthTextColor: 'blue',
+                        textDayFontFamily: 'System',
+                        textMonthFontFamily: 'System',
+                        textDayHeaderFontFamily: 'System',
+                        textMonthFontWeight: '700',
+                        textDayFontSize: 18,
+                        textDayFontWeight: '600',
+                        textMonthFontSize: 22,
+                        textDayHeaderFontSize: 18,
+                        textDayHeaderFontWeight: '600'
+                    }}
                 />
             </View>
         );
