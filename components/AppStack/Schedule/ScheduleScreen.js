@@ -5,17 +5,11 @@ import {
     StyleSheet
 } from 'react-native';
 
-import AgendaScreen from './AgendaScreen';
 import CalendarScreen from './CalendarScreen'
 
 class ScheduleScreen extends Component {
     render() {
         return (
-            // <View style={styles.container}>
-            //     <Text style={styles.text}>
-            //         ScheduleScreen
-            //     </Text>
-            // </View>
             <CalendarScreen />
         )
     }
